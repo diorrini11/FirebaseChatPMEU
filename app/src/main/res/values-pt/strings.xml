@@ -10,5 +10,5 @@
     <string name="signOut" >Sair</string>
     <string name="save" >Guardar</string>
     <string name="saving" >A guardar</string>
-    <string name="person" />
+    <string name="person" >Pessoa</string>
 </resources>

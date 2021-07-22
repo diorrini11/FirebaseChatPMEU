@@ -6,10 +6,12 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.example.firebasechatpmeu.service.MyFirebaseInstanceIDService
 import com.example.firebasechatpmeu.util.FirestoreUtil
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.ErrorCodes
 import com.firebase.ui.auth.IdpResponse
+import com.google.firebase.messaging.FirebaseMessaging
 import org.jetbrains.anko.clearTask
 import org.jetbrains.anko.design.longSnackbar
 import org.jetbrains.anko.indeterminateProgressDialog
@@ -53,6 +55,10 @@ class SignInActivity : AppCompatActivity() {
                 val progressDialog = indeterminateProgressDialog(R.string.accountSetUp)
                 FirestoreUtil.initCurrentUserIfFirstTime {
                     startActivity(intentFor<MainActivity>().newTask().clearTask())
+
+                    val registrationToken = FirebaseMessaging.getInstance().token
+                    MyFirebaseInstanceIDService.addTokenToFirestore(registrationToken.toString())
+
                     progressDialog.dismiss()
                 }
             }
