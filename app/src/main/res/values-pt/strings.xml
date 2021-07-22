@@ -2,4 +2,6 @@
 <resources>
     <string name="people">Pessoas</string>
     <string name="my_account">Minha Conta</string>
+    <string name="signIn" >Entrar</string>
+    <string name="fireMessages" >Começa a disparar mensagens</string>
 </resources>
