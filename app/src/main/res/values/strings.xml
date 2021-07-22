@@ -3,8 +3,11 @@
     <string name="people">People</string>
     <string name="my_account">My Account</string>
     <string name="signIn">Sign In</string>
-    <string name="fireMessages" >Start firing messages</string>
+    <string name="fireMessages">Start firing messages</string>
     <string name="accountSetUp">Setting up your account</string>
     <string name="noNetwork">No network</string>
     <string name="unknownError">Unknown error</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="signOut" >Sign Out</string>
+    <string name="save" >Save</string>
 </resources>

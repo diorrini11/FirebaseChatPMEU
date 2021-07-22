@@ -7,4 +7,6 @@
     <string name="accountSetUp">A preparar a sua conta</string>
     <string name="noNetwork">Sem ligação</string>
     <string name="unknownError">Erro desconhecido</string>
+    <string name="signOut" >Sair</string>
+    <string name="save" >Guardar</string>
 </resources>
