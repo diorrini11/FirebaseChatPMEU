@@ -49,7 +49,7 @@ class SignInActivity : AppCompatActivity() {
             val response = IdpResponse.fromResultIntent(data)
 
             if (resultCode == Activity.RESULT_OK) {
-                val progressDialog = indeterminateProgressDialog("Setting up your account")
+                val progressDialog = indeterminateProgressDialog(R.string.accountSetUp)
                 //TODO: Initialize current user in Firestore
                 startActivity(intentFor<MainActivity>().newTask().clearTask())
                 progressDialog.dismiss()
@@ -59,9 +59,9 @@ class SignInActivity : AppCompatActivity() {
 
                 when (response.error?.errorCode) {
                     ErrorCodes.NO_NETWORK ->
-                        longSnackbar(constraint_layout, "No network")
+                        longSnackbar(constraint_layout, R.string.noNetwork)
                     ErrorCodes.UNKNOWN_ERROR ->
-                        longSnackbar(constraint_layout, "Unknown error")
+                        longSnackbar(constraint_layout, R.string.unknownError)
                 }
             }
         }

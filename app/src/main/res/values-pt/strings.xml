@@ -4,4 +4,7 @@
     <string name="my_account">Minha Conta</string>
     <string name="signIn" >Entrar</string>
     <string name="fireMessages" >Começa a disparar mensagens</string>
+    <string name="accountSetUp">A preparar a sua conta</string>
+    <string name="noNetwork">Sem ligação</string>
+    <string name="unknownError">Erro desconhecido</string>
 </resources>
