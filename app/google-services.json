@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "921145583349",
+    "project_id": "fir-chatpmeu",
+    "storage_bucket": "fir-chatpmeu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921145583349:android:ee5511e624619dd09747bc",
+        "android_client_info": {
+          "package_name": "com.example.firebasechatpmeu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921145583349-jnjjnitbn6uuig8qb6simbvrtnmok4dn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhQTxOqQNQpZCqlZnPPuR98XwQfjm6qIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921145583349-jnjjnitbn6uuig8qb6simbvrtnmok4dn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

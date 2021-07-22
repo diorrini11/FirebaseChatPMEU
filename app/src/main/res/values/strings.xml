@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">FirebaseChatPMEU</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name" translatable="false">FirebaseChatPMEU</string>
+    <string name="people">People</string>
+    <string name="my_account">My Account</string>
 </resources>
