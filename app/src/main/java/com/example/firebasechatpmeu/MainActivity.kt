@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.firebasechatpmeu.fragment.MyAccountFragment
+import com.example.firebasechatpmeu.fragment.PeopleFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<BottomNavigationView>(R.id.nav_view).setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.navigation_people -> {
-                    //TODO: Show people fragment
+                    replaceFragment(PeopleFragment())
                     true
                 }
                 R.id.navigation_my_account -> {

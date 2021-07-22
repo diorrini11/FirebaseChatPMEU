@@ -21,6 +21,7 @@ import com.firebase.ui.auth.AuthUI
 import org.jetbrains.anko.clearTask
 import org.jetbrains.anko.newTask
 import org.jetbrains.anko.support.v4.intentFor
+import org.jetbrains.anko.support.v4.toast
 import java.io.ByteArrayOutputStream
 
 @Suppress("DEPRECATION")
@@ -65,6 +66,7 @@ class MyAccountFragment : Fragment() {
                 else
                     FirestoreUtil.updateCurrentUser(editText_name.text.toString(),
                         editText_bio.text.toString(), null)
+                toast(R.string.saving)
             }
 
             findViewById<Button>(R.id.btn_sign_out).setOnClickListener {
