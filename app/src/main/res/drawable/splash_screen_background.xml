@@ -3,9 +3,11 @@
 
     <item android:drawable="@android:color/white" />
 
+    <!--
     <item>
         <bitmap android:src="@drawable/ic_fire_emoji"
             android:gravity="center"/>
     </item>
+    -->
 
 </layer-list>
